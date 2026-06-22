@@ -58,12 +58,12 @@ docker build -t agape_web .
 ### Run the Docker container
 
 ```bash
-docker run --env-file .env -p 8000:8000 agape_web
+docker run --env-file .env -p 8001:8000 agape_web
 ```
 
 Open your browser at:
 
-http://localhost:8000/
+http://localhost:8001/
 
 ---
 
