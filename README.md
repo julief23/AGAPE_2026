@@ -43,6 +43,27 @@ AGAPE_2026/
 
 ## Installation - Docker deployment
 
+## Environment variables
+
+## First-time setup
+
+Before running the application, create a `.env` file in the project root:
+Create a `.env` file based on `.env.example`:
+
+```env
+DJANGO_SECRET_KEY=replace-with-a-secure-key
+DJANGO_DEBUG=False
+DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
+```
+
+You can generate a secret key with:
+
+```bash
+python -c "import secrets; print(secrets.token_urlsafe(50))"
+```
+
+---
+
 ### Docker and compose Versions
 
 Docker Engine version: `26.1.3`
@@ -67,26 +88,6 @@ http://localhost:8001/
 
 ---
 
-## Environment variables
-
-## First-time setup
-
-Before running the application, create a `.env` file in the project root:
-Create a `.env` file based on `.env.example`:
-
-```env
-DJANGO_SECRET_KEY=replace-with-a-secure-key
-DJANGO_DEBUG=False
-DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
-```
-
-You can generate a secret key with:
-
-```bash
-python -c "import secrets; print(secrets.token_urlsafe(50))"
-```
-
----
 
 ## Applications
 
