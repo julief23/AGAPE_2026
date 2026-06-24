@@ -43,8 +43,6 @@ AGAPE_2026/
 
 ## Installation - Docker deployment
 
-## Environment variables
-
 ## First-time setup
 
 Before running the application, create a `.env` file in the project root:
